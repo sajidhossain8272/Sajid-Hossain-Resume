@@ -19,4 +19,4 @@ You are welcome to view, clone, or use this template for your own purposes.
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/your-resume-repo.git
+   git clone https://github.com/sajidhossain8272/Sajid-Hossain-Resume.git
