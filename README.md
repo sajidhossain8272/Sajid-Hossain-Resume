@@ -7,7 +7,7 @@ Welcome! This repository contains my interactive web-based resume and portfolio,
 This project showcases my experience, technical skills, and portfolio projects in a responsive, easily printable format.  
 It’s designed for recruiters, collaborators, and anyone interested in my development work.
 
-- **Live Demo:** [View Resume Online](https://your-resume-demo-link.com)  
+- **Live Demo:** [View Resume Online](https://sajid-hossain-resume.vercel.app/)  
 - **Download PDF:** Click “Print Resume” in the web version to export or print.
 
 ## About Me
