@@ -29,101 +29,144 @@
   <meta name="apple-mobile-web-app-title" content="Sajid Hossain Resume" />
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
       background-color: #ffffff;
       margin: 0;
       padding: 0;
-      color: #333;
-      line-height: 1.6;
+      color: #222;
+      line-height: 1.3;
+      font-size: 12px;
+    }
+
+    @page {
+      size: A4 portrait;
+      margin: 12mm 12mm 10mm 12mm;
     }
 
     .container {
-      max-width: 800px;
+      max-width: 760px;
       margin: 0 auto;
-      padding: 40px 20px;
+      padding: 16px 14px;
     }
 
     h1,
     h2 {
       color: #111;
+      margin: 0;
     }
 
     h1 {
       font-size: 28px;
-      margin-bottom: 5px;
+      letter-spacing: 0.5px;
+      margin-bottom: 4px;
     }
 
-    h2 {
-      font-size: 20px;
-      border-bottom: 1px solid #eee;
-      padding-bottom: 4px;
-      margin-top: 40px;
+    .headline {
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #444;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
     }
 
-    p {
-      margin: 6px 0;
+    .contact {
+      font-size: 11px;
+      color: #333;
+      margin-bottom: 18px;
     }
 
-    ul {
-      margin: 8px 0 16px 20px;
-      padding: 0;
+    .contact p {
+      margin: 2px 0;
     }
 
-    li {
-      margin-bottom: 6px;
-    }
-
-    .meta {
-      font-style: italic;
-      font-size: 14px;
-    }
-
-    .technologies {
-      font-size: 14px;
-      color: #555;
-    }
-
-    .contact a {
+    a {
       color: #1a0dab;
-      text-decoration: none;
-    }
-
-    .contact a:hover {
       text-decoration: underline;
     }
 
+    .section {
+      margin-bottom: 10px;
+    }
+
+    .two-column {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .two-column .section {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-size: 15px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 4px;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    p,
+    ul {
+      margin: 3px 0 8px 0;
+    }
+
+    ul {
+      padding-left: 16px;
+    }
+
+    li {
+      margin-bottom: 4px;
+    }
+
+    .meta {
+      font-size: 11px;
+      color: #555;
+      margin: 2px 0 6px 0;
+    }
+
     .project-title {
-      font-weight: bold;
+      font-weight: 700;
+      margin: 8px 0 4px;
+    }
+
+    .project-title a {
+      font-weight: 400;
+      font-size: 11px;
+      margin-left: 10px;
+      vertical-align: middle;
     }
 
     .print-button {
-      display: block;
-      text-align: center;
-      margin: 20px auto 30px;
-    }
-
-    .print-button button {
-      padding: 10px 20px;
-      font-size: 16px;
-      cursor: pointer;
+      display: none;
     }
 
     @media print {
-      .print-button {
-        display: none;
-      }
-
       body {
         background-color: #fff;
+        font-size: 11px;
       }
 
-      h2 {
-        page-break-after: avoid;
+      .container {
+        padding: 0;
+      }
+
+      .contact {
+        line-height: 1.2;
       }
 
       .section {
         page-break-inside: avoid;
-        break-inside: avoid;
+      }
+
+      .two-column {
+        grid-template-columns: 1fr;
+      }
+
+      .project-title {
+        margin-top: 8px;
       }
     }
   </style>
@@ -132,242 +175,85 @@
 <body>
   <div class="container">
     <h1>Sajid Hossain</h1>
+    <div class="headline">Software Developer</div>
+
     <div class="contact">
-      <p>
-        Email:
-        <a href="mailto:sajidhossain8272@gmail.com">sajidhossain8272@gmail.com</a>
-      </p>
-      <p>Phone: +8801329530468</p>
-      <p>Address: Dhaka, Bangladesh</p>
-      <p>
-        LinkedIn:
-        <a href="https://linkedin.com/in/brokephilanthropist" target="_blank">linkedin.com/in/brokephilanthropist</a>
-      </p>
+      <p>Email: <a href="mailto:sajidhossain8272@gmail.com">sajidhossain8272@gmail.com</a> | Phone: +8801329530468</p>
+      <p>Location: Dhaka, Bangladesh | LinkedIn: <a href="https://linkedin.com/in/brokephilanthropist" target="_blank">linkedin.com/in/brokephilanthropist</a></p>
     </div>
 
-    <div class="section">
+    <section class="section">
       <h2>Professional Summary</h2>
-      <p>
-        Software Developer with 2+ years of experience delivering responsive, high-performance web applications using
-        <strong>React.js</strong>, <strong>Next.js</strong>, <strong>TypeScript</strong>, and <strong>Tailwind
-          CSS</strong>. Expert in integrating APIs, optimizing performance, and
-        elevating user experience across cross-functional teams. Designed and shipped SEO-friendly, accessible solutions
-        in both modern web and Web3 ecosystems. Successfully led scalable, maintainable front-end builds in agile,
-        remote-first teams, contributing to faster load times, improved UX, and client satisfaction.
-      </p>
-    </div>
+      <p>Software Developer with 2+ years of experience delivering responsive, SEO-friendly web applications using React, Next.js, TypeScript, and Tailwind CSS. Proven ability to improve performance, accessibility, and user experience while collaborating with cross-functional teams.</p>
+    </section>
 
-    <div class="section">
+    <section class="section">
       <h2>Technical Skills</h2>
-      <p>
-        <strong>Languages & Frameworks:</strong> HTML5, CSS3, JavaScript,
-        TypeScript, React.js, Next.js
-      </p>
-      <p>
-        <strong>UI & Styling:</strong> Tailwind CSS, Figma, SEO, Web
-        Performance
-      </p>
-      <p>
-        <strong>Backend & APIs:</strong> Node.js, Express.js, REST APIs,
-        Firebase, MongoDB
-      </p>
-      <p>
-        <strong>Tools:</strong> Git, Postman, Google Analytics, Cloudinary,
-        Gmetrix
-      </p>
-    </div>
+      <p><strong>Languages & Frameworks:</strong> HTML5, CSS3, JavaScript, TypeScript, React.js, Next.js</p>
+      <p><strong>Tools & Platforms:</strong> Tailwind CSS, Responsive Design, Accessibility, SEO, Node.js, Express.js, REST APIs, Firebase, MongoDB, Git, Postman, Google Analytics, Cloudinary, Gmetrix</p>
+    </section>
 
-    <div class="section">
-      <h2>Soft Skills</h2>
-      <p>
-        Attention to Detail • Problem Solving • User-Centered Design Thinking • Agile Collaboration
-        Time Management • Fast Learning • Remote Communication • Cross-Cultural Adaptability
-      </p>
-    </div>
-
-    <div class="section">
+    <section class="section">
       <h2>Professional Experience</h2>
-      <p>
-        <strong>Software Developer – Panorama Management Advisory Services (Hybrid)</strong> |
-        <a href="https://panoramamas.com" target="_blank">panoramamas.com</a><br /><span class="meta">Oct 2024 –
-          Present</span>
-      </p>
+      <p><strong>Software Developer</strong> – <a href="https://panoramamas.com/" target="_blank">Panorama Management Advisory Services</a> (Hybrid), Dhaka, Bangladesh</p>
+      <p class="meta">Oct 2024 – Mar 2026</p>
       <ul>
-        <li>
-          Built scalable, responsive interfaces using React.js, Next.js, and Tailwind CSS
-        </li>
-        <li>
-          Integrated <strong>MongoDB</strong> and <strong>REST APIs</strong> for dynamic content management
-        </li>
-        <li>
-          Applied SEO best practices and Google Analytics for performance
-          insights
-        </li>
-        <li>
-          Led front-end UI/UX enhancements focusing on accessibility and performance
-        </li>
+        <li>Developed responsive front-end features using React.js, Next.js, and Tailwind CSS.</li>
+        <li>Built and maintained the <a href="https://pansms.panoramamas.com/" target="_blank">Panorama Assessment Tool</a> with a focus on seamless workflow and product usability.</li>
+        <li>Worked closely with backend developers to define relevant APIs and support server-side DevOps integration.</li>
+        <li>Partnered with the product team on continuous development planning, PRD execution, and feature delivery.</li>
       </ul>
 
-      <p>
-        <strong>Software Associate – Panorama Management Advisory Services</strong> |
-        <a href="https://panoramamas.com" target="_blank">panoramamas.com</a><br /><span class="meta">Mar 2024 – Oct
-          2024</span>
-      </p>
+      <p><strong>Software Associate</strong> – Panorama Management Advisory Services, Dhaka, Bangladesh</p>
+      <p class="meta">Mar 2024 – Oct 2024</p>
       <ul>
-        <li>Executed QA testing and bug tracking for major front-end components</li>
-        <li>
-          Documented bugs, created test cases, and collaborated closely with developers to
-          streamline issue resolution
-        </li>
-        <li>Authored standard operating procedures (<strong>SOPs</strong>) and version <strong>documentation</strong> to
-          support
-          internal workflows on the SaaS platform</li>
-        <li> Analyzed performance using Gmetrix and Google Analytics</li>
+        <li>Ran QA testing and bug tracking for front-end deliverables.</li>
+        <li>Created SOPs and documentation to improve development workflows.</li>
+        <li>Tracked performance using Gmetrix and Google Analytics.</li>
       </ul>
 
-      <p>
-        <strong>Freelance Front-End Support – Fiverr (Remote)</strong> |
-        <a href="https://www.fiverr.com/s/yv6D9mb" target="_blank">Fiverr Profile</a><br /><span class="meta">Jul 2023 –
-          Present</span>
-      </p>
+    </section>
+
+    <section class="section">
+      <h2>Key Projects</h2>
+      <div class="project-title">QUULIX – E-commerce solution <a href="https://kinoobd.vercel.app/" target="_blank">View website</a></div>
+      <p class="meta">Apr 2026 – May 2026</p>
       <ul>
-        <li>
-          Completed <strong>29+</strong> projects for international clients focused on UI/UX fixes, layout design,
-          and performance optimization
-
-        </li>
-        <li>Built small components and optimized front-end performance</li>
-        <li>Delivered high client satisfaction, earning consistent <strong>5-star ratings</strong> and upgraded to
-          Level 1 Seller</li>
+        <li>Built a responsive e-commerce solution with product, cart, and checkout workflows.</li>
+        <li>Improved conversion-focused UX using Next.js and SEO-friendly storefront design.</li>
       </ul>
-    </div>
 
-    <div class="section">
-      <h2>Projects</h2>
-
-      <p class="project-title">
-        GrafiXr – Digital Agency Portfolio Website |
-        <a href="https://grafixr.com" target="_blank">grafixr.com</a> |
-        <a href="https://github.com/sajidhossain8272/Grafixr-production" target="_blank">View Repository</a>
-      </p>
-      <p class="meta">Mar 2025 – Aug 2025</p>
-      <p class="description">
-        GrafiXr is a portfolio platform designed for creative agencies.
-      </p>
-      <ul>
-        <li>
-          Developed full-stack digital agency site with Next.js, MongoDB, and Cloudinary
-
-        </li>
-        <li>
-          Developed a custom admin panel with dynamic project management features
-        </li>
-        <li>
-          Integrated SEO optimization strategies and implemented performance tracking using
-          Google Analytics (GA4)
-
-        </li>
-      </ul>
-      <p class="technologies">
-        Technologies Used: React.js, Tailwind CSS, Next.js, Node.js, SEO,
-        MongoDB, Cloudinary
-      </p>
-
-      <p class="project-title">
-        Quick Convert – Image Conversion Tool |
-        <a href="https://quick-convert-img.vercel.app" target="_blank">quick-convert-img.vercel.app</a> | 
-        <a href="https://github.com/sajidhossain8272/quick-convert" target="_blank">View Repository</a>
-
-      </p>
+      <div class="project-title">Plzwork – Developer and designer tool suite <a href="https://quick-convert-img.vercel.app/" target="_blank">View website</a> <a href="https://github.com/sajidhossain8272/quick-convert" target="_blank">View repository</a></div>
       <p class="meta">Mar 2025</p>
-      <p class="description">
-        Quick Convert is a secure, in-browser image conversion utility.
-      </p>
       <ul>
-        <li>
-          Engineered a client-side image converter using React.js and
-          TypeScript
-        </li>
-        <li>
-          Focused on fast performance, accessibility, and privacy-first
-          architecture
-        </li>
+        <li>Built Plzwork as a collection of free and freemium tools for developers and designers.</li>
+        <li>Created browser tools and CLI-friendly workflows with React and TypeScript.</li>
       </ul>
-      <p class="technologies">
-        Technologies Used: React.js, TypeScript, SEO, Next.js, Tailwind CSS
-      </p>
 
-      <p class="project-title">
-        Airdrop Infinity – Web3 & Automation Platform |
-        <a href="https://airdrop-infinity.vercel.app" target="_blank">airdrop-infinity.vercel.app</a>
-        |
-        <a href="https://github.com/sajidhossain8272/Airdrop-Infinity" target="_blank">View Repository</a>
-      </p>
-      <p class="meta">Nov 2024 – Jul 2025</p>
-      <p class="description">
-        Airdrop Infinity is a crypto airdrop discovery platform with
-        AI-powered content automation.
-      </p>
+      <div class="project-title">GrafiXr – Digital agency portfolio platform <a href="https://www.grafixr.com/" target="_blank">View website</a></div>
+      <p class="meta">Mar 2025 – Aug 2025</p>
       <ul>
-        <li>
-          Developed a feature-rich Web3 platform for discovering and tracking verified crypto
-          airdrops and blockchain projects
-
-        </li>
-        <li>
-          Integrated REST APIs for real-time project listings and seamless backend
-          communication
-
-        </li>
-        <li>
-          Engineered a fully automated blog publishing pipeline using n8n and Gemini AI,
-          delivering SEO-optimized content directly to the platform, Twitter, and LinkedIn
-
-        </li>
-
+        <li>Built a responsive agency website with Next.js, MongoDB, Cloudinary, and SEO optimization.</li>
+        <li>Developed a dynamic admin panel for content and project management.</li>
       </ul>
-      <p class="technologies">
-        Technologies Used: Web3, Blockchain, REST APIs, n8n, Gemini AI,
-        MongoDB, SEO, Automation, Smart Contracts, Content Generation
-      </p>
-    </div>
 
-    <div class="section">
-      <h2>Education</h2>
-      <p>
-        <strong>BSc in Computer Science & Engineering</strong><br />Northern
-        University Bangladesh – 2021 – 2024
-      </p>
-    </div>
+    </section>
 
-    <div class="section">
-      <h2>Certifications</h2>
-      <ul>
-        <li>
-          Complete Web Development Course – Programming Hero – Issued: 2025 |
-          <a href="https://drive.google.com/file/d/1N5nv2T3qp2warF3Kl2cpZ62vz5DlR7HY/view" target="_blank">View
-            Certificate</a>
-        </li>
-        <li>
-          English for Career Development – Coursera, University of
-          Pennsylvania – Issued: 2021 |
-          <a href="https://www.coursera.org/account/accomplishments/certificate/U7SHDYRMP76T" target="_blank">View
-            Certificate</a>
-        </li>
-      </ul>
-    </div>
+    <div class="two-column">
+      <section class="section">
+        <h2>Education & Certifications</h2>
+        <p><strong>BSc in Computer Science & Engineering</strong> – Northern University Bangladesh, 2021 – 2024</p>
+        <ul>
+          <li>Complete Web Development Course – Programming Hero, Issued 2025</li>
+          <li>English for Career Development – Coursera / University of Pennsylvania, Issued 2021</li>
+        </ul>
+      </section>
 
-    <div class="section">
-      <h2>Languages</h2>
-      <p>English (Fluent), Bangla (Native), Hindi (Conversational)</p>
-    </div>
-
-    <div class="section">
-      <h2>Interests</h2>
-      <p>
-        Esports & Competitive Gaming, Tech Blogging, Building Side Projects,
-        Exploring AI/Automation Tools
-      </p>
+      <section class="section">
+        <h2>Additional Information</h2>
+        <p><strong>Languages:</strong> English (Fluent), Bangla (Native), Hindi (Conversational)</p>
+        <p><strong>Interests:</strong> Esports, Tech Blogging, Side Projects, AI / Automation Tools</p>
+      </section>
     </div>
   </div>
 
