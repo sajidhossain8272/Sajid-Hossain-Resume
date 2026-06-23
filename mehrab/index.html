@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meherab Hossain – Software Developer Resume</title>
+  <meta name="description"
+    content="Resume and portfolio of Meherab Hossain, a Computer Science graduate and Software Developer skilled in C, C++, HTML, CSS, JavaScript, PHP, and SQL. Currently serving as Operations Team Leader at Genex Infosys." />
+  <meta name="keywords"
+    content="Meherab Hossain, Software Developer, Resume, CV, Portfolio, C++, HTML, CSS, JavaScript, PHP, MySQL, Dhaka, Bangladesh, Genex Infosys" />
+  <meta name="author" content="Meherab Hossain" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Meherab Hossain – Software Developer Resume" />
+  <meta property="og:description"
+    content="Responsive, printable resume and portfolio of Meherab Hossain. Available for download, print, or use as a free template." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Meherab Hossain Resume" />
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #ffffff;
+      margin: 0;
+      padding: 0;
+      color: #222;
+      line-height: 1.3;
+      font-size: 12px;
+    }
+
+    @page {
+      size: A4 portrait;
+      margin: 10mm 10mm 10mm 10mm;
+    }
+
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 12px 10px;
+    }
+
+    @media print {
+      html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      body {
+        background-color: #fff;
+        font-size: 10.5px;
+        line-height: 1.3;
+      }
+
+      .container {
+        padding: 0 8px;
+        max-width: 100%;
+        margin: 0;
+      }
+
+      .top-header {
+        margin-bottom: 10px;
+      }
+
+      h1 {
+        font-size: 26px;
+        margin-bottom: 2px;
+      }
+
+      .headline {
+        font-size: 11px;
+        margin-bottom: 5px;
+      }
+
+      .contact {
+        font-size: 10px;
+        margin-bottom: 10px;
+        line-height: 1.2;
+      }
+
+      .section {
+        margin-bottom: 8px;
+        page-break-inside: avoid;
+      }
+
+      h2 {
+        font-size: 13px;
+        margin-bottom: 4px;
+        padding-bottom: 2px;
+      }
+
+      p {
+        margin: 2px 0 5px 0;
+      }
+
+      ul {
+        margin: 2px 0 5px 0;
+        padding-left: 14px;
+      }
+
+      li {
+        margin-bottom: 2px;
+      }
+
+      .meta {
+        font-size: 10px;
+        margin: 1px 0 4px 0;
+      }
+
+      .project-title {
+        font-size: 11px;
+        margin: 5px 0 2px 0;
+      }
+
+      .project-title a {
+        font-size: 10px;
+        margin-left: 5px;
+      }
+
+      .two-column {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+      }
+    }
+
+    .top-header {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: left;
+      margin-bottom: 18px;
+    }
+
+    h1,
+    h2 {
+      color: #111;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 28px;
+      letter-spacing: 0.5px;
+      margin-bottom: 4px;
+    }
+
+    .headline {
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #444;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .contact {
+      font-size: 11px;
+      color: #333;
+      margin-bottom: 18px;
+    }
+
+    .contact p {
+      margin: 2px 0;
+    }
+
+    a {
+      color: #1a0dab;
+      text-decoration: underline;
+    }
+
+    .section {
+      margin-bottom: 10px;
+    }
+
+    .two-column {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .two-column .section {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-size: 15px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 4px;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    p,
+    ul {
+      margin: 3px 0 8px 0;
+    }
+
+    ul {
+      padding-left: 16px;
+    }
+
+    li {
+      margin-bottom: 4px;
+    }
+
+    .meta {
+      font-size: 11px;
+      color: #555;
+      margin: 2px 0 6px 0;
+    }
+
+    .project-title {
+      font-weight: 700;
+      margin: 8px 0 4px;
+    }
+
+    .project-title a {
+      font-weight: 400;
+      font-size: 11px;
+      margin-left: 10px;
+      vertical-align: middle;
+    }
+
+    .print-button {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="top-header">
+      <h1>Meherab Hossain</h1>
+      <div class="headline">Software Developer</div>
+
+      <div class="contact">
+        <p>Email: <a href="mailto:0011meherab@gmail.com">0011meherab@gmail.com</a> | Phone: +8801708577141</p>
+        <p>Location: Ainusbag, Dakshinkhan, Dhaka-1230, Bangladesh</p>
+      </div>
+    </div>
+
+    <section class="section">
+      <h2>Professional Summary</h2>
+      <p>Dedicated and highly motivated Computer Science and Engineering undergraduate seeking an entry-level position to apply my technical skills, problem-solving abilities, and passion for innovation in a dynamic software development environment. Offers a strong foundation in programming languages and web technologies combined with proven leadership capabilities, highlighted by a rapid promotion to Team Leader at Genex Infosys within 7 months of joining.</p>
+    </section>
+
+    <section class="section">
+      <h2>Technical Skills</h2>
+      <p><strong>Programming Languages:</strong> C, C++, PHP, JavaScript, SQL</p>
+      <p><strong>Web Technologies:</strong> HTML5, CSS3, Bootstrap, MySQL</p>
+      <p><strong>Operating Systems & Tools:</strong> Windows, Linux, Microsoft Office package, Git</p>
+      <p><strong>Core Competencies:</strong> Operations Management, Team Leadership, Critical Thinking, Strong presentation skills, Digital Marketing</p>
+    </section>
+
+    <section class="section">
+      <h2>Professional Experience</h2>
+      <p><strong>Executive (Team Leader) – Operations</strong> – <a href="https://genexinfosys.com/" target="_blank">Genex Infosys Ltd.</a> (Casual), Dhaka, Bangladesh (Employee ID: 172251)</p>
+      <p class="meta">Nov 2025 – Present</p>
+      <ul>
+        <li>Promoted to Team Leader (Executive TL) within 7 months of joining the company based on exceptional leadership, reliability, and high performance metrics.</li>
+        <li>Coordinate and supervise a team of operations support personnel to ensure consistent quality of service and compliance with client SLA requirements.</li>
+        <li>Provide guidance, active mentoring, and routine training programs to casual team members, fostering a collaborative, success-oriented environment.</li>
+        <li>Monitor team performance, prepare operational progress reports, and deliver analytical feedback to senior management to guide efficiency efforts.</li>
+        <li>Handle escalated customer challenges, applying strong problem-solving and presentation skills to reach rapid resolutions.</li>
+      </ul>
+
+      <p><strong>Customer Support Officer (CSO) – Operations</strong> – Genex Infosys Ltd., Dhaka, Bangladesh</p>
+      <p class="meta">May 2025 – Nov 2025</p>
+      <ul>
+        <li>Served as primary contact for customer inquiries and platform troubleshooting requests, achieving high performance ratings for resolution speed and satisfaction.</li>
+        <li>Resolved customer complaints, answered questions, and escalated complex issues to specialized engineering and operations teams.</li>
+        <li>Suggested procedural changes during team alignment meetings to optimize routine ticket-handling workflows.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Key Projects</h2>
+      <div class="project-title">Technical Documentation Page</div>
+      <ul>
+        <li>Designed and implemented a responsive, clean Technical Documentation page using HTML5 and CSS3.</li>
+        <li>Organized code blocks and instruction layouts logically to improve readability and ensure ease of navigation.</li>
+      </ul>
+
+      <div class="project-title">Personal Portfolio Webpage</div>
+      <ul>
+        <li>Developed a responsive personal portfolio site using HTML5, CSS3, and JavaScript to host project links and contact forms.</li>
+        <li>Focused on simple animations, clean typography, and optimized asset delivery for fast load times.</li>
+      </ul>
+
+      <div class="project-title">Telephone Number Validator</div>
+      <ul>
+        <li>Built an interactive web tool functionally similar to a Telephone Number Validator utilizing HTML5, CSS3, and JavaScript.</li>
+        <li>Created helper regex match expressions to handle and format diverse international and local dialing patterns.</li>
+      </ul>
+    </section>
+
+    <div class="two-column">
+      <section class="section">
+        <h2>Education</h2>
+        <p><strong>BSc in Computer Science & Engineering</strong> – Northern University Bangladesh</p>
+        <p class="meta">CGPA: 2.93</p>
+        <p><strong>HSC (Science)</strong> – Uttara Anwara Model University College</p>
+        <p class="meta">Passed 2020 | GPA: 2.83</p>
+        <p><strong>SSC (Science)</strong> – Sristy Central School & College</p>
+        <p class="meta">Passed 2015 | GPA: 4.06</p>
+      </section>
+
+      <section class="section">
+        <h2>Additional Information</h2>
+        <p><strong>Languages:</strong> English (Fluent), Bangla (Native)</p>
+        <p><strong>Interests:</strong> Side Projects, Tech Exploring, R&D, Critical Thinking</p>
+      </section>
+    </div>
+  </div>
+
+  <div class="print-button">
+    <button onclick="window.print()">Print Resume</button>
+  </div>
+</body>
+
+</html>
